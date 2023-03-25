@@ -1,0 +1,180 @@
+.login {
+    /* box-sizing: border-box; */
+    width: 100vw;
+    min-height: 100%;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://thurrott.s3.amazonaws.com/wp-content/uploads/sites/2/2022/01/14172326/netflix.jpg");
+    background-size: cover;
+}
+
+.ltop {
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ltop .limageContainer img {
+    height: 3rem;
+}
+
+.lmainContainer {
+    height: 670px;
+    width: 425px;
+    margin: 0 auto;
+    top: 10vh;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 10px;
+}
+
+.lform {
+    width: 85%;
+    height: 580px;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.lform h1 {
+    position: relative;
+    left: 1vw;
+}
+
+.lform input {
+    box-sizing: border-box;
+    background-color: #333333;
+    color: white;
+    border-radius: 5px;
+    width: 95%;
+    border: none;
+    outline: none;
+    height: 55px;
+    margin: -15px auto;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.lform button {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 50px;
+    width: 95%;
+    margin: 15px auto;
+}
+
+.lform .checkbox {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    accent-color: #333333;
+    top: -50px;
+    left: 0.5vw;
+}
+
+.lform p {
+    position: relative;
+    top: -75px;
+    left: 30px;
+    color: #fff;
+}
+
+.lform span {
+    position: relative;
+    left: 0.5vw;
+    top: -45px;
+    color: gray;
+}
+
+.lform span b {
+    color: #fff;
+    cursor: pointer;
+}
+
+.lform small {
+    position: relative;
+    left: 0.5vw;
+    top: -70px;
+    max-width: 80%;
+}
+
+.lform small b Link {
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+b:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 740px) { 
+    .login {
+        height: 1120px;
+    }
+}
+
+@media only screen and (min-width: 740px) and (min-height: 1120px) {
+    .login {
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .login {
+        background: rgba(0, 0, 0, 1);
+        min-height: 100%;
+    }
+    
+    .lmainContainer {
+        margin-top: -4vh;
+        width: 100%;
+        height: 790px;
+    }
+
+    .lform h1 {
+        left: -1vw;
+    }
+
+    .lform input {
+        width: 100%;
+        height: 50px;
+    }
+
+    .lform button {
+        width: 100%;
+        height: 50px;
+    }
+
+    .lform span {
+        top: -10vh;
+    }
+
+    .lform small {
+        top: -13vh;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .ltop {
+        padding: 20px 20px;
+    }
+    .ltop .limageContainer img {
+        height: 1rem;
+    }
+    .lmainContainer {
+        margin-top: -7vh;
+        width: 100%;
+    }
+}

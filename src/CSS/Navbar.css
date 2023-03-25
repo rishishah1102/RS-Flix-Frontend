@@ -1,0 +1,85 @@
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    height: 30px;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+
+.nav_black {
+    background-color: #111;
+}
+
+.nav_logo {
+    position: fixed;
+    left: 20px;
+    width: 90px;
+    height: 40px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.nav_container {
+    position: fixed;
+    display: inline-block;
+    right: 20px;
+    width: 35px;
+    /* object-fit: contain; */
+    height: 35px;
+    transition: transform 450ms;
+}
+
+.nav_button {
+    padding: 0;
+    width: 100%;
+    height: 85%;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+    color: #e50914;
+    cursor: pointer;
+    outline: 0;
+    font-size: 23px;
+}
+
+.nav_dropdown {
+    position: absolute;
+    top: 75%;
+    right: 60px;
+    width: 150px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.show {
+    height: 120px;
+    opacity: 1;
+}
+
+.nav_dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_dropdown li {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 8px 12px;
+    border: 1px solid rgba(125, 125, 125, 0.4);
+}
+
+.nav_dropdown li:hover {
+    background-color: rgb(56, 55, 55);
+    cursor: pointer;
+}

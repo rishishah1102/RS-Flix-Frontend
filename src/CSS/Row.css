@@ -1,0 +1,85 @@
+.row {
+    margin-left: 20px;
+    color: white;
+}
+
+.rowPosters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin-left: -13px;
+    padding: 20px;
+    /* this padding has been added because when we hover over a picture then bottom of it was not showing properly and the we have made a horizontal scrollbar */
+}
+
+.rowPosters::-webkit-scrollbar {
+    display: none;
+}
+
+.rowPosterLarge {
+    max-height: 250px;
+    object-fit: contain;
+    width: 100%;
+    cursor: pointer;
+    /* margin-right: 10px; */
+    transition: transform 450ms; 
+}
+
+.rowPosterLarge:hover {
+    transform: scale(1.09);
+}
+
+.rowPoster {
+    object-fit: contain;
+    max-height: 150px;
+    /* width: 100%; */
+    /* margin-right: 10px; */
+    transition: transform 450ms;
+    cursor: pointer; 
+    /* when we hover over the picture it will show a transition */
+}
+
+.rowPoster:hover {
+    transform: scale(1.08);
+}
+
+.fav_button{
+    position: relative;
+}
+
+.fav {
+    height: 25px;
+    position: relative;
+    left: -15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.fav_dropdown {
+    position: absolute;
+    left: -100px;
+    top: 27px;
+    width: 100px;
+    height: 50px;
+}
+
+.fav_dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fav_dropdown li {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 8px 12px;
+    border: 1px solid rgba(125, 125, 125, 0.4);
+}
+
+.fav_dropdown li:hover {
+    background-color: rgb(8, 8, 8);
+    cursor: pointer;
+}

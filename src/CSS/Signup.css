@@ -1,0 +1,649 @@
+/* Main content */ 
+/* 746px = 100vh for laptop */
+.register {
+    width: 100vw;
+    /* height: 102vh; */
+    height: 765px;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 1) 100%), url("https://thurrott.s3.amazonaws.com/wp-content/uploads/sites/2/2022/01/14172326/netflix.jpg");
+    background-size: cover;
+    box-shadow: 0 8px #333333;
+}
+
+.top {
+    padding: 40px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top .simageContainer img {
+    height: 2.8rem;
+}
+
+.signupButton {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    background-color: #e50914;
+    border: none;
+    color: white;
+    border-radius: 0.2rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.mainContainer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.mainContainer h1 {
+    max-width: 800px;
+    font-size: 4rem;
+    text-align: center;
+    line-height: 1;
+}
+
+.mainContainer h2 {
+    font-size: 1.625rem;
+    max-width: 640px;
+    margin: 10px;
+    text-align: center;
+}
+
+.mainContainer p {
+    font-size: 1.45rem;
+    text-align: center;
+}
+
+.sform {
+    margin-top: 15px;
+    height: 60px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 900px;
+}
+
+.sform input {
+    outline: none;
+    height: 96%;
+    padding: 0 10px;
+    border: 1px solid #8c8c8c;
+    border-radius: 2px;
+    color: black;
+    font-size: 16px;
+}
+
+.sform .getStartedButton {
+    margin-left: 1px;
+    height: 100%;
+    background-image: linear-gradient(180deg, #e50914, #db0510);
+    box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
+    color: #fff;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    padding: 0 10px;
+}
+
+.sFormSigUpButton {
+    position: relative;
+    top: 20px;
+    background-color: #e50914;
+    border: none;
+    color: white;
+    border-radius: 0.2rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+/* The four div's styling */
+.part1,
+.part2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    box-shadow: 0 8px #333333;
+
+    padding: 2rem 5rem;
+    height: 55vh;
+}
+
+.talk {
+    width: 40%;
+}
+
+.talk h1 {
+    font-size: 3.3rem;
+    line-height: 55px;
+    position: relative;
+    bottom: 20px;
+}
+
+.talk p {
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+.boxImg {
+    position: relative;
+    width: 45%;
+    z-index: -1;
+}
+
+.boxImg img {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+.boxImg .videoClass {
+    height: 100%;
+    left: 49.5%;
+    max-height: 54%;
+    max-width: 73%;
+    position: absolute;
+    top: 48%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.videoClass2 {
+    height: 100%;
+    left: 50%;
+    max-height: 47%;
+    max-width: 63%;
+    position: absolute;
+    top: 34%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.netflixVideo {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+/* Faqs Section styling */
+.containerFaqs {
+    box-shadow: 0 8px #333333;
+}
+
+.faqs {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.faqs h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    padding: 3rem 0 2rem 0;
+}
+
+.list {
+    width: 900px;
+    max-width: 80vw;
+    cursor: pointer;
+}
+
+.title {
+    position: relative;
+    background: #303030;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: none;
+    margin-bottom: 6px;
+}
+
+.icon {
+    background: none;
+    color: #fff;
+    border: none;
+    width: 20px;
+    position: relative;
+    font-size: 2.5rem;
+    position: relative;
+    transition: 0.5s linear;
+    cursor: pointer;
+}
+
+.faqAnswer {
+    margin-top: -4px;
+    background: #303030;
+    line-height: 35px;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding: 20px 30px;
+    margin-bottom: 6px;
+}
+
+.mainContainer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 250px;
+}
+
+.mainContainer2 p {
+    font-size: 1.45rem;
+    text-align: center;
+}
+
+.sFormSigUpButton2 {
+    position: relative;
+    top: 20px;
+    background-color: #e50914;
+    border: none;
+    color: white;
+    border-radius: 0.2rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    cursor: pointer;
+    /* margin-bottom: 50px; */
+}
+
+/* responsive for main content */
+@media only screen and (max-width: 1450px) and (min-width: 950px) {
+    .register {
+        height: 86vh;
+    }
+
+    .top .simageContainer img { 
+        height: 2.25rem;
+    }
+
+    .mainContainer h1 {
+        font-size: 3.125rem;
+        max-width: 640px;
+    }
+}
+
+@media only screen and (max-width: 950px) and (min-width: 740px) {
+    .register {
+        height: 687px;
+    }
+}
+
+@media screen and (max-width: 740px) and (min-width: 550px) {
+    .register {
+        height: 657px;
+    }
+}
+/* Responsive for maincontent p tag and faqs content p tag */
+@media screen and (max-width: 740px) {
+    .mainContainer p {
+        font-size: 18px;
+    }
+
+    .mainContainer2 p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 950px) and (min-width: 550px) {
+    /* main content */
+    .top .simageContainer img {
+        height: 2rem;
+    }
+
+    .mainContainer h1 {
+        font-size: 3.125rem;
+        max-width: 640px;
+    }
+
+    .mainContainer p {
+        max-width: 450px;
+        padding: 0 10%;
+    }
+
+    .sform input {
+        height: 100%;
+    }
+
+    .sform .getStartedButton {
+        width: 56%;
+        height: 40%;
+        /* margin-top: 30px; */
+        margin: 30px auto;
+    }
+
+    .sFormSigUpButton {
+        top: 40px
+    }
+
+    /* 4-div's */
+    .part1 {
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem 1rem;
+        text-align: center;
+        height: 450px;
+    }
+
+    .part2 {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 2rem 1rem;
+        text-align: center;
+        height: 450px;
+    }
+
+    .talk {
+        width: 85%;
+    }
+
+    .talk h1 {
+        font-size: 2.5rem;
+        line-height: 1.1;
+        position: relative;
+        bottom: .5rem;
+    }
+
+    .talk p {
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+
+    .boxImg {
+        width: 50%;
+    }
+
+    /* faqs section */
+    .faqs {
+        width: 85%;
+    }
+
+    .faqs h1 {
+        font-size: 2.5rem;
+    }
+
+    .mainContainer2 p {
+        max-width: 450px;
+        padding: 0 10%;
+    }
+
+    .sFormSigUpButton2 {
+        top: 40px;
+        margin-bottom: 60px;
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 550px) {
+    /* main content */
+    .register {
+        height: 485px;
+    }
+
+    .top .simageContainer img {
+        height: 1.5rem;
+    }
+
+    .signupButton {
+        padding: 0.3rem 0.8rem 0.5rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .mainContainer h1 {
+        font-size: 1.75rem;
+        max-width: 80%;
+    }
+
+    .mainContainer h2 {
+        font-size: 1.125rem;
+    }
+
+    .mainContainer p {
+        padding: 0 5%;
+    }
+
+    .sform input {
+        height: 100%;
+        position: relative;
+        left: -11px;
+    }
+
+    .sform .getStartedButton {
+        position: relative;
+        top: 12px;
+        left: -11px;
+        width: 60%;
+        height: 50%;
+        margin-top: 15px;
+        font-size: 16px;
+        margin: 15px auto;
+    }
+
+    .sFormSigUpButton {
+        top: 20px;
+        font-size: 0.8rem;
+        padding: 0.3rem 0.8rem;
+    }
+
+    /* 4 div's */
+    .part1 {
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem 1rem;
+        text-align: center;
+        height: 50vh;
+    }
+
+    .part2 {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 2rem 1rem;
+        text-align: center;
+        height: 50vh;
+    }
+
+    .talk {
+        width: 85%;
+    }
+
+    .talk h1 {
+        font-size: 1.625rem;
+        line-height: 1.1;
+        position: relative;
+        bottom: .5rem;
+    }
+
+    .talk p {
+        font-size: 1.125rem;
+        font-weight: 300;
+    }
+
+    .boxImg {
+        width: 50%;
+    }
+
+    /* faqs section */
+    .faqs {
+        width: 90%;
+    }
+
+    .faqs h1 {
+        font-size: 1.625rem;
+    }
+    
+    .title {
+        font-size: 1.4rem;
+    }
+
+    .icon {
+        font-size: 2rem;
+    }
+
+    .faqAnswer {
+        font-size: 1.1rem;
+        line-height: 30px;
+        padding: 10px 30px;
+    }
+
+    .mainContainer2 p {
+        padding: 0 5%;
+    }
+    
+    .sFormSigUpButton2 {
+        top: 20px;
+        font-size: 0.8rem;
+        padding: 0.3rem 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    /* main content */
+    .register {
+        height: 485px;
+    }
+
+    .top {
+        padding: 20px 30px;
+    }
+    .top .simageContainer img {
+        height: 1.2rem;
+    }
+
+    .signupButton {
+        padding: 0.3rem 0.8rem 0.5rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .mainContainer h1 {
+        font-size: 1.75rem;
+        max-width: 80%;
+    }
+
+    .mainContainer h2 {
+        font-size: 1.125rem;
+    }
+
+    .mainContainer p {
+        padding: 0 5%;
+    }
+
+    .sform input {
+        height: 100%;
+        position: relative;
+        left: -35px;
+    }
+
+    .sform .getStartedButton {
+        position: relative;
+        top: 12px;
+        left: -35px;
+        width: 50%;
+        height: 50%;
+        margin-top: 12px;
+        font-size: 14px;
+        margin: 15px auto;
+    }
+
+    .sFormSigUpButton {
+        top: 15px;
+        font-size: 0.6rem;
+        padding: 0.2rem 0.6rem;
+    }
+
+    /* 4-div's */
+    .part1 {
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem 1rem;
+        text-align: center;
+        height: 35vh;
+    }
+
+    .part2 {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 2rem 1rem;
+        text-align: center;
+        height: 35vh;
+    }
+
+    .talk {
+        width: 85%;
+    }
+
+    .talk h1 {
+        font-size: 1.325rem;
+        line-height: 1.1;
+        position: relative;
+        bottom: .5rem;
+    }
+
+    .talk p {
+        font-size: 0.925rem;
+        font-weight: 300;
+    }
+
+    .boxImg {
+        width: 50%;
+    }
+
+    /* faqs section */
+    .faqs {
+        width: 90%;
+    }
+
+    .faqs h1 {
+        font-size: 1.625rem;
+    }
+
+    .title {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+
+    .icon {
+        font-size: 1.5rem;
+    }
+
+    .faqAnswer {
+        font-size: 0.9rem;
+        line-height: 25px;
+        padding: 10px 20px;
+    }
+
+
+    .mainContainer2 p {
+        padding: 0 5%;
+    }
+
+    .sFormSigUpButton2 {
+        top: 15px;
+        font-size: 0.6rem;
+        padding: 0.2rem 0.6rem;
+    }
+}

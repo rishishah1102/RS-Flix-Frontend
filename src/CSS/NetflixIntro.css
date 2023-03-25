@@ -1,0 +1,12 @@
+#netflixIntro {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#netflixIntro #video {
+    height: 50%;
+    width: 100%;
+    margin: 25vh auto;
+}

@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.netflix {
+    background-color: #111;
+    margin-top: -20px;
+}
+
+@media (max-width: 390px){
+    .netflix {
+      width: 80vh;
+    }
+    .banner_contents {
+      position: relative;
+      top: 70px;
+    }
+  }
