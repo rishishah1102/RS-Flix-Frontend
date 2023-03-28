@@ -13,6 +13,7 @@ function Favourites() {
   const [favMovie, setFavMovie] = useState([]);
   const [trailerUrl, setTrailerUrl] = useState("");
   const [hover, sethover] = useState(false);
+  const [deleteMovie, setDeleteMovie] = useState(false);
   const cookie = new Cookies();
 
   useEffect(() => {
@@ -21,13 +22,16 @@ function Favourites() {
       if (response.data === undefined || response.data.data.length === 0) {
         return;
       }
+      else if (deleteMovie) {
+        setDeleteMovie(false);
+      }
       else {
         setFavMovie(response.data.data);
       }
       return response;
     };
     fetchMovie();
-  }, []);
+  }, [deleteMovie]);
 
   const opts = {
     height: "390",
@@ -73,7 +77,7 @@ function Favourites() {
         let status = response.status;
         if (status === 200) {
           toast.success("The movie has been deleted successfully from my-favourites");
-          window.location.reload(true);
+          setDeleteMovie(true);
         }
       })
       .catch((err) => {
