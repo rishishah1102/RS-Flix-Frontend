@@ -19,15 +19,15 @@ function Favourites() {
   useEffect(() => {
     const fetchMovie = async () => {
       const response = await axios.get('https://rs-flixbackend.onrender.com/favourites', {headers: {Authorization: cookie.get('jwtToken')}});
+      
       if (response.data === undefined || response.data.data.length === 0) {
-        return;
-      }
-      else if (deleteMovie) {
-        setDeleteMovie(false);
+        setFavMovie([]);
       }
       else {
         setFavMovie(response.data.data);
       }
+
+      deleteMovie && setDeleteMovie(false);
       return response;
     };
     fetchMovie();
